@@ -6,9 +6,9 @@ header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json');
 
 $randomData = [];
-$numberOfArrays = 10;
+//$numberOfArrays = 10;
 
-for ($i = 0; $i <= $numberOfArrays; $i++) {
+for ($i = 0; $i <= $_GET["numbers"]; $i++) {
     $number = rand (-25 , 25);
     $array = [$i,$number];
     array_push($randomData,$array);
